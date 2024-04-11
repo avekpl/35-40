@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+</head>
+<body>
+  <div>
+    <h1 style="color:purple; font-size:10;">Menu:</h1>
+    <h1 style="color:yellow; font-size:10;">1- zolty</h1>
+    <h1 style="color:red; font-size:10;">2- czerwony</h1>
+  </div>
+  <input type="button" name="mal" value="Oblicz" onclick="funkcja_mal()" />
+  <script>
+    function funkcja_mal() {
+      var opcja_dana_mal = prompt("Podaj kolor:", "");
+      if (opcja_dana_mal == 1 || opcja_dana_mal.toLowerCase() == "zolty") {
+        document.write('<h6 style="color:yellow; font-size:10;">Wczytano kolor zolty</h6><br />');
+      } else if (opcja_dana_mal == 2 || opcja_dana_mal.toLowerCase() == "czerwony") {
+        document.write('<h1 style="color:red; font-size:10;">Wczytano kolor czerwony</h1><br />');
+      }
+    }
+  </script>
+</body>
+</html>
